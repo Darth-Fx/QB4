@@ -45,8 +45,8 @@
 					//X(qubits[1]);
 
 					//Demo of Hadamard
-					Set (Zero, qubits[0]);
-					H(qubits[0]);
+					//Set (Zero, qubits[0]);
+					//H(qubits[0]);
 
 					//Demo of SWAP
 					//Set (One, qubits[0]);
@@ -95,22 +95,22 @@
 					let res2 = M (qubits[2]);
 					let res3 = M (qubits[3]);
 
-					if(res3 == Zero && res2 == Zero && res1 == Zero && res0 == Zero){set num0000 = num0000 + 1;}
-					if(res3 == Zero && res2 == Zero && res1 == Zero && res0 == One ){set num0001 = num0001 + 1;}
-					if(res3 == Zero && res2 == Zero && res1 == One  && res0 == Zero){set num0010 = num0010 + 1;}
-					if(res3 == Zero && res2 == Zero && res1 == One  && res0 == One ){set num0011 = num0011 + 1;}
-					if(res3 == Zero && res2 == One  && res1 == Zero && res0 == Zero){set num0100 = num0100 + 1;}
-					if(res3 == Zero && res2 == One  && res1 == Zero && res0 == One ){set num0101 = num0101 + 1;}
-					if(res3 == Zero && res2 == One  && res1 == One  && res0 == Zero){set num0110 = num0110 + 1;}
-					if(res3 == Zero && res2 == One  && res1 == One  && res0 == One ){set num0111 = num0111 + 1;}
-					if(res3 == One  && res2 == Zero && res1 == Zero && res0 == Zero){set num1000 = num1000 + 1;}
-					if(res3 == One  && res2 == Zero && res1 == Zero && res0 == One ){set num1001 = num1001 + 1;}
-					if(res3 == One  && res2 == Zero && res1 == One  && res0 == Zero){set num1010 = num1010 + 1;}
-					if(res3 == One  && res2 == Zero && res1 == One  && res0 == One ){set num1011 = num1011 + 1;}
-					if(res3 == One  && res2 == One  && res1 == Zero && res0 == Zero){set num1100 = num1100 + 1;}
-					if(res3 == One  && res2 == One  && res1 == Zero && res0 == One ){set num1101 = num1101 + 1;}
-					if(res3 == One  && res2 == One  && res1 == One  && res0 == Zero){set num1110 = num1110 + 1;}
-					if(res3 == One  && res2 == One  && res1 == One  && res0 == One ){set num1111 = num1111 + 1;}
+					if(res0 == Zero && res1 == Zero && res2 == Zero && res3 == Zero){set num0000 = num0000 + 1;}
+					if(res0 == One && res1 == Zero && res2 == Zero && res3 == Zero){set num1000 = num1000 + 1;}
+					if(res0 == Zero && res1 == One && res2 == Zero && res3 == Zero){set num0100 = num0100 + 1;}
+					if(res0 == One && res1 == One && res2 == Zero && res3 == Zero){set num1100 = num1100 + 1;}
+					if(res0 == Zero && res1 == Zero && res2 == One && res3 == Zero){set num0010 = num0010 + 1;}
+					if(res0 == Zero && res1 == Zero && res2 == Zero && res3 == Zero){set num1010 = num1010 + 1;}
+					if(res0 == One && res1 == Zero && res2 == One && res3 == Zero){set num0110 = num0110 + 1;}
+					if(res0 == One && res1 == One && res2 == One && res3 == Zero){set num1110 = num1110 + 1;}
+					if(res0 == Zero && res1 == Zero && res2 == Zero && res3 == One){set num0001 = num0001 + 1;}
+					if(res0 == One && res1 == Zero && res2 == Zero && res3 == One){set num1001 = num1001 + 1;}
+					if(res0 == Zero && res1 == One && res2 == Zero && res3 == One){set num0101 = num0101 + 1;}
+					if(res0 == One && res1 == One && res2 == Zero && res3 == One){set num1101 = num1101 + 1;}
+					if(res0 == Zero && res1 == Zero && res2 == One && res3 == One){set num0011 = num0011 + 1;}
+					if(res0 == One && res1 == Zero && res2 == One && res3 == One){set num1011 = num1011 + 1;}
+					if(res0 == Zero && res1 == One && res2 == One && res3 == One){set num0111 = num0111 + 1;}
+					if(res0 == One && res1 == One && res2 == One && res3 == One){set num1111 = num1111 + 1;}
 					
 					
                 }
