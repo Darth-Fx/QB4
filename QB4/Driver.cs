@@ -11,8 +11,10 @@ namespace Quantum.QB4
             {
 
                 var res = QB4Run.Run(sim).Result;
-                var (p0000, p0001, p0010, p0011, p0100, p0101, p0110, p0111, 
-                    p1000, p1001, p1010, p1011, p1100, p1101, p1110, p1111) = res;
+                var (p0000, p1000, p0100, p1100, p0010, p1010, p0110, p1110,
+                    p0001, p1001, p0101, p1101, p0011, p1011, p0111, p1111) = res;
+
+          
                 System.Console.WriteLine("0000 -> " + p0000 / 10000.0);
                 System.Console.WriteLine("1000 -> " + p1000 / 10000.0);
                 System.Console.WriteLine("0100 -> " + p0100 / 10000.0);

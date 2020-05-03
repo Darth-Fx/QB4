@@ -77,7 +77,7 @@
 					//Q2 ---------------x----------------M
 					
 					Set (One, qubits[0]);
-                    Set (One, qubits[1]);
+                    Set (Zero, qubits[1]);
 					Set (One, qubits[2]);
 					CCNOT(qubits[0],qubits[1],qubits[2]);
 
@@ -133,8 +133,8 @@
             }
             
 
-            return (num0000, num0001, num0010, num0011, num0100, num0101, num0110, num0111, 
-					num1000, num1001, num1010, num1011, num1100, num1101, num1110, num1111);
+            return (num0000, num1000, num0100, num1100, num0010, num1010, num0110, num1110, 
+					num0001, num1001, num0101, num1101, num0011, num1011, num0111, num1111);
 
         }
     }
