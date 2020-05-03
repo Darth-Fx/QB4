@@ -58,12 +58,24 @@
                     //CNOT(qubits[0],qubits[1]);
 
 					//Demo of Bell State
+					//TODO calculate the statevector for the resulting state!!!!
+
+					//Q0 ---------H-----o----------------M
+					//                  |
+					//Q1 ---------------x----------------M
+
 					//Set (Zero, qubits[0]);
                     //Set (Zero, qubits[1]);
                     //H(qubits[0]);
                     //CNOT(qubits[0],qubits[1]);
 
 					//Demo of Toffoli Gate in general configuration
+					//Q0 ---------------o----------------M
+					//                  |
+					//Q1 ---------------o----------------M
+				    //                  |
+					//Q2 ---------------x----------------M
+					
 					//Set (One, qubits[0]);
                     //Set (One, qubits[1]);
 					//Set (One, qubits[2]);
@@ -100,7 +112,7 @@
 					if(res0 == Zero && res1 == One && res2 == Zero && res3 == Zero){set num0100 = num0100 + 1;}
 					if(res0 == One && res1 == One && res2 == Zero && res3 == Zero){set num1100 = num1100 + 1;}
 					if(res0 == Zero && res1 == Zero && res2 == One && res3 == Zero){set num0010 = num0010 + 1;}
-					if(res0 == Zero && res1 == Zero && res2 == Zero && res3 == Zero){set num1010 = num1010 + 1;}
+					if(res0 == One && res1 == Zero && res2 == One && res3 == Zero){set num1010 = num1010 + 1;}
 					if(res0 == One && res1 == Zero && res2 == One && res3 == Zero){set num0110 = num0110 + 1;}
 					if(res0 == One && res1 == One && res2 == One && res3 == Zero){set num1110 = num1110 + 1;}
 					if(res0 == Zero && res1 == Zero && res2 == Zero && res3 == One){set num0001 = num0001 + 1;}
